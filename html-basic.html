@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html练习作业</title>
+</head>
+<body>
+    <hgroup>
+        <h1>Lorem.</h1>
+        <h2>Lorem, ipsum.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+    </hgroup>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et consectetur tempore,!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam est cumque quod aut offic reiciendis minima</p>
+    <a href="https://www.jd.com/" target="blank">新标签页打开京东</a>
+    <a href="mailto:731367891@qq.com">点击给我发QQ邮件</a>
+    <a href="bottom">跳转到页面底部/尾部</a>
+    <p>
+    <a href="https://github.com/jiangweijing/blog/blob/master/img/xixuegui.gif?raw=true"download>点我保存妹子图片</a>
+    <br>
+    <img title="老师能看到这里我名字倒着写！" src="https://github.com/jiangweijing/blog/blob/master/img/xixuegui.gif?raw=true" alt=“图片加载失败”>
+    <a href="https://github.com/jiangweijing/blog/blob/master/img/xixuegui.gif?raw=true" target="_blank">
+        <img title="老师能看到这里我名字倒着写！" src="https://github.com/jiangweijing/blog/blob/master/img/xixuegui.gif?raw=true" alt=“图片加载失败”>
+    </a>
+
+<hr>  hr原来是分割线 
+<hr>
+
+<marquee direction="up"style="height:1em;border:1px solid;">
+        i'm marquee<br>
+        i'm another maquee
+        </marquee>
+        
+
+<strong>strong 元素代表内容的强烈的重要性、严重性或者紧急性。</strong>
+<br>
+em元素用来强调其内容的重点,可根据重点把em放在改变的何处改变其含义比如：
+<ul>
+    <li><em>猫</em> 是可爱的动物</li>
+    <li>猫是<em> 可爱的 </em>动物</li>
+    <li>猫是可爱的<em> 动物 </em></li>
+<br>
+<b>b不传达任何情绪及重要性的含义，单纯的为了某目的引起注意，比如文章中的产品名称，文档的关键词</b>
+<br>
+<i>i元素为在普通文章中突出不同意见语气或其他的一段文本,例如:一个技术术语，一个想法等</i>
+<br>
+<u>u它定义显示常规文本风格不同的文本，像拼写错误的单词或者汉语中的专有名词</u>
+<br>
+以上说明取自w3c的h5标准
+<br>
+
+<p>
+    &lt;!-- 注释已添加至在代码里面 -->
+    <!-- 我就是注释，你肯定不会看 -->
+</p>
+<pre>
+    <code>
+        pre常套code使用 js适合用这两个标签来表示
+        function foo（）{
+            feturn 8
+            }
+    </code>
+</pre>
+<hr> 
+<ul>
+    <li>大学
+        <ul>
+            <li>大一
+                <ol>
+                    <li>九月</li>
+                    <li>十月</li>
+                    <li>十一月</li>
+                </ol>
+            </li>
+            <li>大二</li>
+            <li>大三</li>
+        </ul>
+    </li>
+    <li>中学</li>
+    <li>小学</li>
+    <li>li</li>
+</ul>
+<hr> 
+<dl>
+    <dt>电影名</dt>
+    <dd>泰坦尼克号</dd>
+    <dt>导演</dt>
+    <dd>卡梅隆</dd>
+    <dt>主演</dt>
+    <dd>小李子 凯特·温斯莱特</dd>
+</dl>
+<hr> 
+<h3>某度搜索</h3>
+  <form action="https://www.baidu.com/s" target="blank">
+	<input placeholder="提示语：输入关键字检索" type="text" name="w" required>
+	<input type="submit" value="搜索">
+    <!-- <button>真·新窗口打开搜索结果</button>   value默认显示 -->
+  </form>
+<hr>
+<h4>个人信息登记表</h4>
+<form action="">
+    <dl>
+        <dt>姓名</dt>
+        <dd>
+            <label><input type="text"></label>
+        </dd>
+
+        <dt>密码</dt>
+        <dd>
+            <label><input type="password"</label>
+        </dd>
+
+        <dt>性别</dt>
+        <dd>
+            <label><input type="radio" name="性别">男</label>
+            <label><input type="radio" name="性别">女</label>
+		</dd>
+
+		<dt>成绩</dt>
+		<dd>
+            <select name="" id="">
+                <optgroup label="优">
+                    <option value="100-90分">100-90分</option>
+                    <option value="90-80分">90-80分</option>
+                </optgroup>
+                <optgroup label="良">
+                    <option value="70-60分">80-70分</option>
+                    <option value="80-70分">80-70分</option>
+                </optgroup>
+                <optgroup label="不及格"> 
+                    <option value="60-0分">60-0分</option>
+                </optgroup>
+            </select>
+        </dd>
+
+        <dt>生日</dt>
+		<dd><input type="data"></dd>
+		
+         <dt>生辰</dt>
+		<dd><input type="time"></dd>
+
+		<dt>肤色</dt>
+		<dd><input type="color"></dd>
+
+		<dt>照片</dt>
+		<dd>
+			<label for="1">点我上传图片</label>
+			<input type="file" hidden name="" id="1" accept=".jpg,.png">
+			<!-- 还可以用image/* -->
+		</dd>
+		
+		<dt>自我介绍</dt>
+		<dd>
+			 <textarea cols="20" rows="6">请介绍自己吧</textarea>
+		</dd>
+		
+    </dl>
+
+
+<fieldset disabled="">
+    <legend>禁用的表单还显示干啥</legend>
+    <input type="radio">
+    <input type="radio">
+    <input type="radio">
+    <input type="radio">
+    <input type="text" >
+    <input type="text" >
+    <input type="text" >
+</fieldset>
+</form>
+
+<br>
+<img width="300" usemap="#duolaameng" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557237238706&di=da1b784db4d0332aa01ba67963c4b819&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201412%2F08%2F20141208160240_VNGTC.jpeg" title="点击哆啦A梦了解身体构造" >
+
+<map name="duolaameng">
+<area shape="rect" coords=" 52,358,149,404" href="https://www.baidu.com/s?wd=%E5%93%86%E5%95%A6A%E6%A2%A6%E7%9A%84%E8%84%9A&tn=78040160_59_pg&ie=utf8" target="_blank" title="哆啦A梦的脚">
+
+<area shape="circle" coords="150,130,130" href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=78040160_59_pg&wd=%E5%93%86%E5%95%A6A%E6%A2%A6%E7%9A%84%E5%A4%B4&oq=%25E5%2593%2586%25E5%2595%25A6A%25E6%25A2%25A6%25E7%259A%2584%25E8%2584%2591%25E8%25A2%258B&rsv_pq=c2ff37cf000eadac&rsv_t=f4163VgnK9ut17Bqm%2B6%2FGi1ADRZgOziNctIkAF0mN06GO1f6E9lELgBFJBqeJ28HfSsL2gU&rqlang=cn&rsv_enter=1&inputT=1180&rsv_sug3=10&rsv_sug1=7&rsv_sug7=100&rsv_sug2=0&rsv_sug4=5260" target="_blank" title="哆啦A梦的圆脑袋">
+
+<area shape="poly" coords="98 275 161 275 213 275 211 297 201 318 170 327 137 326 106 304 99 280" href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=78040160_59_pg&wd=%E5%93%86%E5%95%A6A%E6%A2%A6%E7%9A%84%E5%9B%9B%E6%AC%A1%E5%85%83%E5%8F%A3%E8%A2%8B&oq=%25E5%259B%259B%25E6%25AC%25A1%25E5%2585%2583%25E5%258F%25A3%25E8%25A2%258B&rsv_pq=da1fd1a800044931&rsv_t=05eeWmS4tiS4vXsk%2Fr9%2BFS62qp%2Fg3f2e169hsLFJ3CR%2Fze0y013RUnN5xcMbTTBQZMjnySk&rqlang=cn&rsv_enter=0&inputT=4182&rsv_sug3=24&rsv_sug1=18&rsv_sug7=100&rsv_sug2=0&rsv_sug4=6470" target="_blank" title="哆啦A梦的次元口袋"
+</map>
+
+<!-- 注意要加#号 否则热区虽然生效但是点击时候不显示边框   rect矩形  坐标输入按照左上角至右下角   cicle原型 坐标输入:先输入圆心,后从圆心右侧计算半径-->
+
+
+
+<table border=1>
+    <caption>成绩单 </caption>
+
+    <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>成绩</th>
+            </tr>  
+    </thead>
+    <col bgcolor="red">
+    <tbody>
+       
+        <tr>
+                <td>张三</td>
+                <td>20</td>
+                <td>80</td>
+        </tr>  
+        <tr>
+                <td>李四</td>
+                <td>25</td>
+                <td>91</td>
+        </tr> 
+    </tbody>
+</table>
+
+
+<!-- row 跨行(上下延伸) col跨列(左右延伸) -->
+<br>
+<table border=1>
+<tbody>
+    <tr>
+        <td>001</td>
+        <td colspan="3">002</td>
+        <td rowspan="3">003</td>
+        <td>004</td>
+    </tr>
+    <tr>
+        <td rowspan="2">01</td>
+        <td rowspan="3">02</td>
+        <td rowspan="2" colspan="2" >003</td>
+        <td rowspan="2">04</td>
+    </tr>
+    <tr>
+        <td rowspan="3">1</td>
+        <td colspan="3">2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+        <td>006</td>
+    </tr>
+</tbody>
+</table>
+
+<br>
+<div style="color:red;">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facilis voluptatum aperiam placeat quibusdam quos provident eos vel ipsam magni voluptate repellat dolore alias, animi aliquid, doloribus incidunt quaerat at.Dolores esse id officiis, perspiciatis delectus autem deleniti dignissimos, nesciunt, iure nemo cumque vero aperiam vitae ea. Excepturi, voluptas accusantium inventore minus voluptate beatae, cumque facere eum placeat debitis voluptatem!
+</div>
+<br>
+
+<a href="https://www.mi.com/" target="sousuo">点击我会在下面的frame里打开小米商场，但为什么打不开呢？</a>
+<br>
+<iframe width="1000" height="800 " name="sousuo"
+src="https://www.baidu.com/" frameborder="1">
+<p>您的浏览器不支持此框架</p>
+</iframe>
+
+<div>
+        怎样&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这两个字之间空这么大呢？
+        <br>
+        怎样在页面中显示下面的内容呢？
+        <br>
+        &lt;span>&lt;/span>
+      </div>
+    
+</body>
+</html>
