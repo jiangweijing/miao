@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iOS-chechbox 练习（半成品）</title>
+
+    <style>
+        input {
+            display:none;
+        }
+
+
+        .beijing {
+            width:160px;
+            height:90px;
+            border:2px solid #E5E5E5;
+            background-color: #ffffff;
+            border-radius:90px;           /*增加圆弧*/
+            box-shadow:4px 4px 6px 1px rgb(218,218,218) ;  /*圆形增加阴影*/
+                position: fixed;               /*圆形位移*/
+                top:12px;
+                left:12px;
+                right:0px;
+                bottom:0px;
+            box-sizing:border-box;
+            transition:border 0.3s;
+        }
+
+
+        .yuanxing {
+            width:90px;
+            height:90px;
+            border:2px solid #E5E5E5;
+            background-color:#FFFFFF;
+            border-radius:90px;
+            box-shadow:4px 4px 6px 1px rgb(218,218,218) ;
+                position: fixed;
+                top:12px;
+                left:12px;
+                right:0px;
+                bottom:0px;
+        
+        }
+
+        input:checked + label > .beijing {
+            background-color: rgb(76,218,100);
+        }
+
+        input:checked + label > .yuanxing {
+            left: 81px;
+            transition:left 0.1s;  
+            }
+    </style>
+
+</head>
+<body>
+    <input type="checkbox" id="a">
+    <label for="a">
+        <div class="beijing"></div> 
+        <div class="yuanxing"></div>
+    </label>  
+</body>
+</html>
