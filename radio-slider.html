@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>banner (半成品)</title>
+    <style>
+        .slider {
+            width:500px;
+            height:280px; 
+            border: 5px solid black;
+
+        
+        }
+        .slider input {     
+            display : none; 
+        }
+
+        .slider .indicators {
+            position : absolute ;
+            top : 330px ;
+        }
+
+        .slider .indicators label {
+            display : inline-block; 
+            width : 15px ;
+            height : 15px ;
+            border : 3px solid #9ea09e ; 
+            background: #e8ede8;
+            border-radius:43px;
+            cursor:pointer;
+        }
+
+        .slider img {
+            height : 100%;
+            display : none;
+            width : 100%;
+        }
+
+        .slider input:checked + img {
+            display: block;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="slider">
+        <div class="indicators">
+          <label for="01"></label>
+          <label for="02"></label>
+          <label for="03"></label>
+          <label for="04"></label>
+          <label for="05"></label>
+        </div>
+        <input checked type="radio" name="hello" id="01">
+        <img src="https://n.sinaimg.cn/mil/transform/200/w640h360/20190516/69b3-hwzkfpu5618136.png" alt="">
+        <input type="radio" name="hello" id="02">
+        <img src="https://n.sinaimg.cn/mil/transform/200/w640h360/20190516/05a5-hwzkfpu5616069.jpg" alt="">
+        <input type="radio" name="hello" id="03">
+        <img src="https://n.sinaimg.cn/mil/12/w520h292/20190516/f3a4-hwzkfpu5647973.gif" alt="">
+        <input type="radio" name="hello" id="04">
+        <img src="https://n.sinaimg.cn/mil/transform/200/w640h360/20190516/0e22-hwzkfpu5647031.jpg" alt="">
+        <input type="radio" name="hello" id="05">
+        <img src="https://n.sinaimg.cn/mil/transform/200/w640h360/20190516/f7cd-hwzkfpu5659636.png" alt="">
+    </div>    
+</body>
+</html>
