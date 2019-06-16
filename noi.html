@@ -1,101 +1,145 @@
-	<script   id="ch0103/01">
-		var A = +prompt("A:"),
-			B = +prompt("B:");
-		console.log(A + B);
+<script  id="ch0103/01">
+	var a = Number(prompt("Please input \"a\""))
+	var b = Number(prompt("Please input \"b\""))
+	console.log(a + b)
 	</script>
-	<script   id="ch0103/02">
-		var a = +prompt("a:"),
-			b = +prompt("b:"),
-			c = +prompt("c:");
-		console.log((a + b) * c);
+	
+	<script  id="ch0103/02">
+	  var a = Number(prompt("Please input \"a\""))
+	  var b = Number(prompt("Please input \"b\""))
+	  var c = Number(prompt("Please input \"c\""))
+	
+	  var output =(a + b) * c
+	  console.log(output)
 	</script>
+	
+	
 	<script   id="ch0103/03">
-		var a = +prompt("a:"),
-			b = +prompt("b:"),
-			c = +prompt("c:");
-		console.log((a + b) / c);
+	  var a = Number(prompt("Please input \"a\""))
+	  var b = Number(prompt("Please input \"b\""))
+	  var c = Number(prompt("Please input \"c\""))
+	
+	  var output =((a + b) / c) | 0 
+	  console.log(output)
 	</script>
+	
+	
 	<script   id="ch0103/04">
-		var a = +prompt('a:'),
-			b = +prompt("b:"),
-			c = a % b,
-			d = (a - c) / b;
-		console.log(d, c);
+	var a = +prompt(" please input a")
+	var b = +prompt(" please input b")
+	var r = a / b
+	var c = a % b
+	console.log(r)
+	console.log(c)
 	</script>
+	
 	<script   id="ch0103/05">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		console.log((a / b).toFixed(9));
+	var a = Number(prompt("please input a"))
+	var b = Number(prompt("please input b"))
+	var num = a / b
+	console.log(num.toFixed(9))
 	</script>
+	
 	<script   id="ch0103/06">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		console.log((b / a).toFixed(5) * 100 + "%");
+	var a = Number(prompt("please 输入确诊数"))
+	var b = Number(prompt("please 输入死亡数"))
+	var death = b / a * 100
+	console.log(death.toFixed(3) + "%")
 	</script>
-	<script   id="ch0103/07">
-		var a = prompt("a:"),
-			b = prompt("b:"),
-			c = prompt("c:"),
-			d = prompt("d:"),
-			x = prompt("x:");
-		console.log(Number((a * Math.pow(x, 3) + b * Math.pow(x, 2) + c * x + d)).toFixed(7));
+	
+	<script  id="ch0103/07">
+		var x = +prompt("input x") 
+			a = +prompt("input a") 
+			b = +prompt("input b") 
+			c = +prompt("input c") 
+			d = +prompt("input d") 
+		console.log((a * Math.pow(x, 3) + b * Math.pow(x, 2) + c * x + d).toFixed(7))
 	</script>
-	<script   id="ch0103/08">
-		var f = prompt("f:");
-		console.log((5 * (f - 32) / 9).toFixed(5));
+	
+	<script  id="ch0103/08">
+	  var f = +prompt("输入华氏度F")
+	  var c = 5 * (f - 32) / 9
+	  console.log(c.toFixed(5))
 	</script>
-	<script   id="ch0103/09">
-		var pi = 3.14159,
-			r = prompt("r:"),
-			d = (2 * r).toFixed(4),
-			l = (2 * pi * r).toFixed(4),
-			s = pi * Math.pow(r, 2).toFixed(4);
-		console.log("直径:" + d, "周长:" + l, "面积:" + s);
+	
+	<!-- 半径r   直径d  周长c   面积s 
+	c=2*pi*r   s=pi*r*r -->
+	<script  id="ch0103/09">
+	var pi =3.14159
+	var r = +prompt("请输入圆circle半径r")
+	var d = r * 2
+		c = 2 * pi * r
+		s = pi * r * r
+	console.log(d.toFixed(4),c.toFixed(4),s.toFixed(4))
 	</script>
-	<script   id="ch0103/10">
-		var r1 = prompt("r1:"),
-			r2 = prompt("r2:");
-		console.log((1 / (1 / r1 + 1 / r2)).toFixed(2));
+	
+	<!-- 对于阻值为r1和r2的电阻，其并联电阻阻值公式计算如下：
+	R = 1/(1/r1 + 1/r2) -->
+	<script  id="ch0103/10">
+	var r1 = +prompt("输入如电阻r1")
+	var r2 = +prompt("输入如电阻r2")
+	console.log((1/(1/r1+1/r2)).toFixed(2))
 	</script>
-	<script   id="ch0103/11">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		console.log(a % b);
+	
+	<script  id="ch0103/11">
+	var a = +prompt("input 除数 a")
+	var b = +prompt("input 被除数 b")
+	console.log((a % b).toFixed(4))
 	</script>
-	<script   id="ch0103/12">
-		var r = prompt("r:");
-		console.log((4 / 3 * Math.PI * Math.pow(r, 3)).toFixed(2));
+	
+	<!-- 对于半径为r的球，其体积的计算公式为V=4/3*πr3，这里取π= 3.14  现给定r，求V -->
+	<script  id="ch0103/12">
+	var r = +prompt("input 球的半径r"),
+		pi = 3.14;
+	console.log((4/3*pi*Math.pow(r,3)).toFixed(2))
 	</script>
-	<script   id="ch0103/13">
-		var num = prompt("num:");
-		console.log(num.split("").reverse().join(""));
+	
+	<!-- 两种方案1:转化字符串 反转 还原成数值
+	2: %100算出余数然后*100变成百位   -->
+	<script  id="ch0103/13">
+	 var n = prompt('n')
+	  console.log( n.split('').reverse().join(''))
 	</script>
-	<script   id="ch0103/14">
-		var h = prompt("h:"),
-			r = prompt("r:");
-		console.log(Math.ceil(20000 / (Math.PI * Math.pow(r, 2) * h)));
+	
+	<!-- 圆柱的体积计算 -->
+	<script  id="ch0103/14">
+	var h = +prompt("输入圆柱的深 高h (单位厘米)")
+	var r = +prompt("输入圆柱的地面半径r  (单位厘米)")
+	var pi = 3.14159
+	var v = 20/((pi * r * r * h)/1000)
+	console.log(Math.ceil(v))
 	</script>
-	<script   id="ch0103/15">
-		var n = prompt("n:"),
-			x = prompt("x:"),
-			y = prompt("y:");
-		console.log(n - Math.ceil(y / x));
+	
+	<!-- n苹果  虫子x小时吃一个    经过小时是y -->
+	<script  id="ch0103/15">
+	var n = prompt("请输入苹果数量 n") 
+	var x = prompt("请输入虫子几x小时吃一个苹果")
+	var y = prompt("请输入虫子吃了几y小时 ")
+	var apple = n - Math.ceil(y / x)
+	console.log(apple)
 	</script>
-	<script   id="ch0103/16">
-		var Xa = prompt("Xa"),
-			Ya = prompt("Ya"),
-			Xb = prompt("Xb"),
-			Yb = prompt("Yb");
-		console.log(Math.sqrt(Math.pow(Xa - Xb, 2) + Math.pow(Ya - Yb, 2)).toFixed(3));
+	
+	<script  id="ch0103/16">
+	var xa =  +prompt('xa')
+	var ya =  +prompt('ya')
+	var xb =  +prompt('xb')
+	var yb =  +prompt('yb')
+	var line1 = xb - xa 
+	var line2 = yb - ya 
+	console.log( Math.sqrt(Math.pow(line1,2) + Math.pow(line2,2)).toFixed(3))
 	</script>
-	<script   id="ch0103/17">
-		var x1 = prompt("x1:"),
-			y1 = prompt("y1:"),
-			x2 = prompt("x2:"),
-			y2 = prompt("y2:"),
-			x3 = prompt("x3:"),
-			y3 = prompt("y3:");
-		console.log(((x1 * y2 + y1 * x3 + x2 * y3 - x1 * y3 - y2 * x2 - y2 * x3) / 2).toFixed(2));
+	
+	<!-- 三个坐标点求面积公式S=(1/2)*(x1y2+x2y3+x3y1-x1y3-x2y1-x3y2) -->
+	<script  id="ch0103/17">
+	  var X1 =  +prompt('X1')
+	  var Y1 =  +prompt('Y1')
+	  var X2 =  +prompt('X2')
+	  var Y2 =  +prompt('Y2')
+	  var X3 =  +prompt('X3')
+	  var Y3 =  +prompt('Y3')
+	  console.log( (0.5*(X1*Y2 + X2*Y3 + X3*Y1 - X1*Y3 -X2*Y1 -X3*Y2)).toFixed(2) ) 
+	</script>
+	
 	</script>
 	<script   id="ch0103/18">
 		var a1 = prompt("a1:"),
