@@ -397,3 +397,217 @@ R = 1/(1/r1 + 1/r2) -->
 			y = prompt("y:");
 		console.log(n - Math.ceil(y / x));
 	</script>
+
+	<script type="x"  id="ch0105/01">
+var n = +prompt("Input number of students")
+var age1 = +prompt("Input student1 age")
+var age2 = +prompt("Input student2 age")
+console.log(((age1+age2) / n).toFixed(2))
+</script>
+
+<!-- <script id="ch0105/02">
+
+for (var mouth=0; mouth<12; mouth += 1 ) {
+    if (mouth<12) {
+        var money = money + (+prompt("Input month money"))
+    } else {
+        console.log( ("$")+ ((money/12).toFixed(2))  )
+    }
+    
+}
+
+</script> -->
+
+<!-- <script id="ch0105/02">
+var m = 0
+var sum = 0
+if (m < 12) {
+    m = m + 1
+    var sum = sum + (+prompt("Input month money"))
+} else {
+    console.log("$" + (sum / 12).toFixed(2))
+    } 
+</script> -->
+    
+
+<script type="x" id="ch0105/02">
+    var sum = 0
+    for (var i = 1; i < 12; i++) {
+        sum = sum + (+prompt("month" + i))
+    }
+    console.log("$" + (sum / 12).toFixed(2))
+</script>
+
+
+<script  type="x" id="ch0105/03">
+  var n = +prompt("输入样本容量(数量)")
+	var sum = 0
+	for (var counter = 0; counter < n; counter++) {
+		 sum = sum + (+prompt("输入样本数据"+ n))
+	}
+	console.log((sum/n).toFixed(4))
+</script>
+
+
+<script type="x" id="ch0105/04">
+ var n = +prompt("你输入个数,我输出它们的和与平均值")
+ var sum = 0
+ 
+ for(var counter =0; counter < n; counter++) {
+	 sum = sum + (+prompt("input" + n + "个数的值"))
+ }
+ console.log(sum)
+ console.log((sum/n).toFixed(5))
+</script>
+
+
+<script  type="x" id="ch0105/05">
+var n = +prompt("input student num")
+var max = 0
+for(var counter = 0; counter < n; counter++) {
+	score = (+prompt("input student score成绩"))
+	if(score>max) {
+		max = score
+	}
+}
+ console.log(max)
+</script>
+
+
+<script type="x" id="ch0105/06">
+var n = +prompt("input n个数, 输出最大值减去最小值")
+var max =0
+var min =1000
+for(var counter = 0; counter < n; counter++) {
+	var x = +prompt("input num")
+	if (x>max) {
+		max = x
+	} 
+	if (x<min) 
+		min = x
+}
+console.log(max - min)
+</script>
+
+
+<script type="x" id="ch0105/07">
+var day = +prompt("input day")
+var sumj = 0 
+var sumy = 0
+var sumt = 0
+for(var counter = 0; counter < day; counter++) {
+   var	 j = +prompt("input god medal ")
+   var y = +prompt("input silver medal ")
+   var t = +prompt("input bronze medal")
+	 sumj = sumj + j 
+	 sumy = sumy + y
+	 sumt = sumt + t
+}
+sum = sumj + sumy + sumt
+console.log(sumj + " " + sumy + " " + sumt+ " " + sum)
+</script>
+
+
+<script type="x" id="ch0105/08">
+var n = +prompt("n几条边") 
+var sumangle = (n - 2) * 180
+var sumothers = 0
+for (var i = 1; i < n; i++) {
+    sumothers = sumothers + (+prompt("angle角度" + i)  )
+}
+console.log(sumangle - sumothers)
+</script>
+
+<script type="x" id="ch0105/09">
+   var a = +prompt("a") 
+   var b = +prompt("b") 
+   var sum = 0
+    for (var i = m; i <= n; i++) {
+        if (i % 2 != 0) {
+            sum = sum + i
+        }
+    }
+    console.log(sum)
+</script>
+
+<script type="x" id="ch0105/10">
+	var m = +prompt("m") 
+	var n = +prompt("n") 
+	var sum = 0
+	for (var i = m; i <= n; i++) {
+			if (i % 17 == 0) {
+					sum = sum + i
+			}
+	}
+	console.log(sum)
+</script>
+
+
+
+<script type="x" id="ch0105/11">
+var k = +prompt("input k") 
+var n1,n5,n10 = 0
+for (var i = 1; i <= k; i++) {
+   n = +prompt("n")
+	 if (n = 5 ) {
+			n1= n1+1	
+	 }
+	 if (n = 1)
+
+	 }
+}
+</script>
+
+<script  id="ch0105/12">
+var n = +prompt("n")
+var m = +prompt("m")
+var sum = 0
+var same = 0
+for (var i = 0; i <n; i++) {
+	var sum = +prompt("input n个整数")
+  if  (sum == m) {
+    same +=1
+	}
+}
+console.log(same)
+</script>
+
+<script  id="ch0105/13">
+
+</script>
+
+
+<script type="x" id="ch0105/44">
+var n = prompt("n") | 0
+    var isPrime, count = 0
+    for (var i = 1; i < Infinity; i++) {
+        // 质数是大于1的自然数
+        isPrime = true
+        for (var k = 2; k <= Math.sqrt(i); k++) {
+            if (i % k == 0) {
+                isPrime = false
+            }
+        }
+        if (isPrime) {
+            count++
+        }
+        if (count == n) {
+            break
+        }
+    }
+console.log(i)
+</script>
+
+
+
+<script type="x" id="ch0105/45">
+var n = +prompt("n") 
+var sum = 0
+  for (var i = 0; (i * (i + 1) / 2)  < n; i++ ) {
+      sum = sum + i * i
+  }
+  sum = sum + (n - ((i - 1) * i / 2)) * i
+	console.log(sum)
+</script>
+
+
