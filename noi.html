@@ -432,9 +432,9 @@ if (m < 12) {
 
 <script  id="ch0105/02">
   var sum = 0
-  for (var i = 1; i < 12; i++) {
+    for (var i = 0; i < 12; i++) {
       sum = sum + (+prompt("month" + i))
-  }
+    }
   console.log("$" + (sum / 12).toFixed(2))
 </script>
 
@@ -518,26 +518,29 @@ var n = +prompt("输入样本容量(数量)")
   console.log(sumangle - sumothers)
   </script>
 
-  <script  id="ch0105/09">
-    var a = +prompt("a") 
-    var b = +prompt("b") 
-    var sum = 0
-      for (var i = m; i <= n; i++) {
-          if (i % 2 != 0) {
-              sum = sum + i
-          }
+<script  id="ch0105/09">
+  var m = +prompt("m") 
+  var n = +prompt("n") 
+  var sum = 0
+  for (var i = m; i <= n; i++) {
+    // 注意奇数求和 m不是0   加等号
+      if (i % 2 === 1) {
+          sum = sum + i
       }
-      console.log(sum)
+  }
+  console.log(sum)
 </script>
+
 
 <script  id="ch0105/10">
   var m = +prompt("m") 
   var n = +prompt("n") 
   var sum = 0
   for (var i = m; i <= n; i++) {
-          if (i % 17 == 0) {
-                  sum = sum + i
-          }
+    // 注意m不是0   加等号
+      if (i % 17 === 0) {
+          sum = sum + i
+      }
   }
   console.log(sum)
 </script>
@@ -546,16 +549,25 @@ var n = +prompt("输入样本容量(数量)")
 
 <script  id="ch0105/11">
   var k = +prompt("input k") 
-  var n1,n5,n10 = 0
+  var n1= 0,
+      n5= 0,
+      n10 = 0
   for (var i = 1; i <= k; i++) {
-    n = +prompt("n")
-      if (n = 5 ) {
-          n1= n1+1	
+    n = +prompt("input"+i+"个num")
+      if (n == 1 ) {
+        n1 = n1 + 1	
       }
-      if (n = 1){
-
+      if (n == 5) {
+        n5 = n5 + 1	
+      }
+      if (n == 10) {
+        n10 = n10 + 1	
       }
   }	 
+  console.log(n1)
+  console.log(n5)
+  console.log(n10)
+
 </script>
 
 <script  id="ch0105/12">
